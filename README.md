@@ -67,4 +67,42 @@ For any questions or custom feature requests, please feel free to reach out to t
 
 ---
 
+## Project 4: Data Filter Script
+
+### Description
+`data_filter.sh` is a Bash script designed for filtering rows from a CSV file based on user-defined conditions. The script reads a CSV file, filters its rows according to specified criteria (like age or salary), and then outputs the filtered data to a new CSV file. This script is ideal for quick data extraction and reporting tasks.
+
+### Usage
+1. Prepare your data in a CSV file named `data.csv`. Ensure the CSV file has a header row and values separated by commas.
+2. Open the script `data_filter.sh` and configure the variables:
+   - `FILENAME`: Name of your CSV file.
+   - `COLUMN`: Column number for applying the filter (e.g., `2` for Age).
+   - `CONDITION`: Filter condition (e.g., `'>=30'` for Age greater or equal to 30).
+   - `REPORT_FILE`: Name of the output file for filtered data.
+3. Run the script using the command: ./data_filter.sh
+
+   The filtered data will be saved to the specified report file.
+
+### Script Details
+- **Filename**: `data_filter.sh`
+- **Functionality**: Filters data from a CSV file based on a specified condition and generates a report.
+- **Input**: A CSV file with structured data. The script assumes the first row is a header row.
+- **Output**: A new CSV file containing rows that meet the filter condition.
+
+### Example CSV File
+Name,Age,Salary
+Alice,30,50000
+Bob,35,55000
+Carol,29,48000
+Dave,40,60000
+
+
+### Customization
+- Modify the script to filter based on different columns or conditions as per your data requirements.
+- The script can be extended to support more complex filters or to process multiple conditions simultaneously.
+
+Feel free to reach out to the script maintainer for questions or feature requests.
+
+---
+
 
