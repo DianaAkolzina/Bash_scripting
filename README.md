@@ -32,3 +32,39 @@ This script reads a series of numbers from a text file and calculates the mean, 
 - **Input File Format**: A text file named `numbers.txt`, with one number per line.
 
 ---
+
+## Project 3: CSV Data Aggregator
+
+### Description
+The `csv_aggregator.sh` script is designed to process CSV (Comma-Separated Values) files for data analysis tasks. It reads data from a specified CSV file, extracts values from a chosen column, and performs aggregate calculations such as summing up the values and calculating their average. This script is particularly useful for quick analyses of datasets where specific numerical insights are needed from certain columns.
+
+### Usage
+1. Ensure your CSV file (e.g., `data.csv`) is in the same directory as the script. The CSV file should have a header row and values separated by commas.
+2. Open the script `csv_aggregator.sh` and set the `FILENAME` variable to your CSV file's name.
+3. Set the `COLUMN` variable to the column number you wish to analyze (e.g., `3` for the third column).
+4. Run the script using the command: ./csv_aggregator.sh
+
+
+### Script Details
+- **Filename**: `csv_aggregator.sh`
+- **Functionality**: Reads a specified column from a CSV file and calculates the sum and average of the numerical values in that column.
+- **Input**: A CSV file with structured data. The script assumes the first row is a header row.
+- **Output**: Prints the sum and average of the values in the selected column to the console.
+
+### Example CSV File
+Name,Age,Salary
+Alice,30,50000
+Bob,35,55000
+Carol,29,48000
+Dave,40,60000
+
+In this example, if the script is set to process the third column (`Salary`), it will calculate and output the sum and average of the salary values.
+
+### Customization
+The script can be easily modified to process different files or columns. Additional functionalities like median calculation, handling different delimiters, or processing multiple columns simultaneously can be added as needed.
+
+For any questions or custom feature requests, please feel free to reach out to the script maintainer.
+
+---
+
+
