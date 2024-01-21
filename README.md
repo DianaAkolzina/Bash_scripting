@@ -105,7 +105,7 @@ Dave,40,60000
 ## Project 5: Log Analyzer Script
 
 ### Description
-The `log_analyzer.sh` script is a sophisticated Bash script designed to analyze server log files. It processes a given log file, extracts key information like error codes and their frequencies, and generates a concise summary report. This script demonstrates advanced Bash scripting concepts including command-line argument parsing, associative arrays, regular expressions, and file manipulation.
+The `log_analyzer.sh` script is a Bash script designed to analyze server log files. It processes a given log file, extracts key information like error codes and their frequencies, and generates a concise summary report. This script demonstrates Bash scripting concepts including command-line argument parsing, associative arrays, regular expressions, and file manipulation.
 
 ### Usage
 1. Ensure you have a log file (e.g., `server.log`) containing standard log entries.
