@@ -101,7 +101,43 @@ Dave,40,60000
 - Modify the script to filter based on different columns or conditions as per your data requirements.
 - The script can be extended to support more complex filters or to process multiple conditions simultaneously.
 
-Feel free to reach out to the script maintainer for questions or feature requests.
+
+## Project 5: Log Analyzer Script
+
+### Description
+The `log_analyzer.sh` script is a sophisticated Bash script designed to analyze server log files. It processes a given log file, extracts key information like error codes and their frequencies, and generates a concise summary report. This script demonstrates advanced Bash scripting concepts including command-line argument parsing, associative arrays, regular expressions, and file manipulation.
+
+### Usage
+1. Ensure you have a log file (e.g., `server.log`) containing standard log entries.
+2. Run the script with the log file as its argument:./log_analyzer.sh server.log
+
+Replace `server.log` with the path to your actual log file.
+
+### Script Details
+- **Filename**: `log_analyzer.sh`
+- **Functionality**: Reads a server log file, counts occurrences of different log levels (ERROR, WARN, INFO), and prints a summary report.
+- **Input**: A server log file with a format similar to:
+[2024-01-20 08:30:00] ERROR: Connection timeout.
+[2024-01-20 09:15:23] INFO: User login successful.
+[2024-01-20 09:30:45] ERROR: Database connection failed.
+[2024-01-20 10:00:05] WARN: Disk space reaching limit.
+
+- **Output**: A summary report indicating the number of occurrences of each log level.
+
+### Example Output
+
+Log Analysis Report:
+ERROR: 2
+INFO: 1
+WARN: 1
+
+
+### Advanced Concepts Demonstrated
+- **Command-Line Argument Parsing**: The script takes a filename as a command-line argument.
+- **Associative Arrays**: Used to count and store occurrences of each log level.
+- **Regular Expressions**: Applied for pattern matching to extract data from each log entry.
+- **File Manipulation**: Reading and processing data from a file.
+
 
 ---
 
